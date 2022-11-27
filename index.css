@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    animation: animate 35s ease-in-out infinite; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5)50%;
+}
+
+.details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes animate{
+    0%{
+        background-image:url(bgphotos/idea.png);
+    }
+    25%{
+        background-image:url(bgphotos/harassment.png);
+    }
+    50%{
+        background-image:url(bgphotos/hope.png);
+    }
+    75%{
+        background-image:url(bgphotos/violence.png);
+    }
+    100%{
+        background-image:url(bgphotos/information.png);
+    }
+}
+.navbar{
+    width: auto;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 110px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00FFF3;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.desc h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+.desc span{
+    color:#89fff9;
+}
+.desc p{
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+    color: white;
+}
+.desc{
+    margin-left: 6%;
+    margin-top: 6%;
+}
+.desc .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.desc .btn:hover{
+    display: inline-block;
+    background: linear-gradient(45deg, #6cd5ff, #9a5bff);
+    border-radius: 6px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+}

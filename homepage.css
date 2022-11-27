@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(bgphotos/idea.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    padding: 2% 6%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 110px;
+    cursor: pointer;
+}
+.ribbon{
+    flex: 1;
+    text-align: right;
+}
+.ribbon ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.ribbon ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.ribbon ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00FFF3;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.ribbon ul li:hover::after{
+    width: 100%;
+}
+.greet{
+    width: 90%;
+    color:aliceblue;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.greet h1{
+    font-size: 60px;
+}
+.greet span{
+    color:#71fff8;
+}
+.greet p{
+    margin: 10px 0 20px;
+    font-size: 16px;
+    color: aliceblue;
+}
+.row-abt{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.know{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.know:hover{
+    display: inline-block;
+    background: linear-gradient(45deg, #6cd5ff, #9a5bff);
+    border-radius: 6px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+}
+@media(max-width: 700px){
+    .greet h1{
+       font-size: 20px;
+    }
+    .ribbon ul li{
+        display: block;
+    }
+    .ribbon{
+        position: absolute;
+        background: #00abc9;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+/*-- creators --*/
+
+.creators{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.label{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(0, 7, 29);
+}
+.cp{
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.name{
+    text-align: left;
+}
+.creators-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: left;
+    background: #c1ecff;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.creators-col img{
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.creators-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10%;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+/*Icons*/
+.icon a{
+    text-decoration: none;
+    color:darkgrey;
+}
+.icon ion-icon{ /*icons*/
+    color:lightgray;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+    position:relative;
+    top:-10px;
+}
+.icon ion-icon:hover{
+    color:#00abc9;
+}
+.foot span{
+    color:#2687be;
+}
+.row1{
+    background-color: #fff6e0;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.s-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(bgphotos/hope.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.s-header h1{
+    margin: 100px;
+    font-size: 30px;
+}
+.s-header span{
+    color: #00f5e9;
+}
+.a-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(238, 248, 253);
+}
+.a-col{
+    flex-basis: 48%;
+    padding: 20px 30px;
+    align-items: center;
+}
+.a-col img{
+    width: 100%;
+}
+.a-col h1{
+    padding-top: 0;
+}
+.a-col span{
+   color: #007c76;
+}
+.a-col p{
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+.a-col img{
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+}
+.MV{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    color:black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.MV-col{
+    flex-basis: 44%;
+    background: #c1ecff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.MV-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.go{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;  
+}
+.go:hover{
+    display: inline-block;
+    background: linear-gradient(45deg, #6cd5ff, #9a5bff);
+    border-radius: 6px;
+    border: 1px solid aliceblue;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+}
+.locate{
+    width: 80%;
+    margin:auto;
+    padding: 60px 0;
+}
+
+.locate iframe{
+    width: 100%;
+}
+.contact-info{
+    width: 80%;
+    margin: auto;
+    background-color: #eaf5fa;
+    background-position: center;
+    background-size: cover;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col img{
+    width: 100%;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div ion-icon{ /*icons*/
+    color:#2cd0ec;
+    font-size: 28px;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color:#363534;
+    font-weight: 400;
+}
+.time{
+    color: #005e8a;
+}
+.info{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.info img{
+    width: 100%;
+    max-width: 800px;
+}
+.info span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

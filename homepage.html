@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Eri | Homepage </title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="icons/logo.png"></a>
+            <div class="ribbon">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="filler.html">FEATURE</a></li>
+                    <li><a href="aboutpage.html">ABOUT</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="greet">
+            <h1>Hello there <span>User</span>!</h1>
+            <p>Welcome to <span>Eri</span>! Your gurdian ready to supply necessary information to help counter
+                <br>or lessen the everburning chain of issues, problems, and forms of violence.</p>
+                <a href="aboutpage.html" class="know">Know more about <span>Eri</span>!</a>
+        </div>
+    </section>
+
+    <!--New Section-->
+
+    <section class="creators">
+        <h1 class="label">The Creators</h1>
+        <p>Creator's comments for Users
+            <br><span>Click containers for more information</span></p>
+
+        <div class="info" id="info1">
+            <img src="info/ara.png" id="img1">
+            <span id="info" onclick="closeInfo()"> X </span>
+        </div>
+            <div class="info" id="info2">
+                <img src="info/alex.png" id="img2">
+                <span id="info" onclick="closeInfo()"> X </span>
+            </div>
+                <div class="info" id="info3">
+                    <img src="info/adrian.png" id="img3">
+                    <span onclick="closeInfo()"> X </span>
+                </div>
+                    <div class="info" id="info4">
+                        <img src="info/robin (1).png" id="img4">
+                        <span onclick="closeInfo()"> X </span>
+                    </div>
+                        <div class="info" id="info5">
+                            <img src="info/jose.png" id="img5">
+                            <span onclick="closeInfo()"> X </span>
+                        </div>
+                            <div class="info" id="info6">
+                                <img src="info/lin.png" id="img6">
+                                <span onclick="closeInfo()"> X </span>
+                            </div>
+                                <div class="info" id="info7">
+                                    <img src="info/saini (1).png" id="img7">
+                                    <span onclick="closeInfo()"> X </span>
+                                </div>
+
+        <div class="row">
+            <div class="creators-col" onclick="openInfo1('info1')">
+                <img src="creators/Ara.jpg">
+                <div>
+                    <p class="cP">"This website is incredibly useful! People can learn about this, and
+                         it has many beneficial benefits."</p>
+                    <h3 class="name">Arabela Bacerdo</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo2('info2')">
+                <img src="creators/Alexa.png">
+                <div>
+                    <p class="cP">"This website is created to help you out, use it as much as needed to 
+                        enhance your knowledge as well as raise awareness amongst your peers."</p>
+                    <h3 class="name">Alexa Gale Cabading</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo3('info3')">
+                <img src="creators/Adrian.jpg">
+                <div>
+                    <p class="cP">"This website can help you understand what you may encounter in any location, 
+                        what to do if you encounter harassment, and what to do if you have experienced harassment. 
+                        Always remember that prevention begins with ourselves, so be observant and mindful of your
+                         surroundings."</p>
+                    <h3 class="name">Adrian Carcueva</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo4('info4')">
+                <img src="creators/Robin.png">
+                <div>
+                    <p class="cP">"Danger can appear out of nowhere, please use our app as an aid to potential 
+                        accidents and problems you may encounter."</p>
+                    <h3 class="name">Robinhood Fernando Coligado</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo5('info5')">
+                <img src="creators/JM.jpg">
+                <div>
+                    <p class="cP">"Please remember to be careful around you every day. Utilize this application
+                        for your safety. Stay safe everyone!"</p>
+                    <h3 class="name">Jose Mari Neri</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo6('info6')">
+                <img src="creators/Lin.jpg">
+                <div>
+                    <p class="cP">"You may face a lot of defeats in life, but never let yourself be defeated"</p>
+                    <h3 class="name">Lindsay Quibal</h3>
+                </div>
+            </div>
+            <div class="creators-col" onclick="openInfo7('info7')">
+                <img src="creators/Saini.png">
+                <div>
+                    <p class="cP">"Stay alert, life may be full of danger. Make yourself your own saviour in risky situations."</p>
+                    <h3 class="name">Jameet Saini</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icon"> <!--Replace "#" with links of groups-->
+            <a href="https://www.facebook.com/people/Unofficial-Eri/100088112625757/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="filler.html" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" ></ion-icon></a>
+            <a href="https://twitter.com/EriApp2" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+        <p class="foot">This website is generated to aid its users with necessary information.
+            We, here at <span><b>Eri</b></span>, hopes this website is to your liking.</p>
+    </section> 
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> <!--For icons only-->
+    <script>
+        var info = document.getElementById('info');
+
+        function openInfo1(){
+            document.getElementById('info1').style.display = "flex";
+        }
+        function openInfo2(){
+            document.getElementById('info2').style.display = "flex";
+        }
+        function openInfo3(){
+            document.getElementById('info3').style.display = "flex";
+        }
+        function openInfo4(){
+            document.getElementById('info4').style.display = "flex";
+        }
+        function openInfo5(){
+            document.getElementById('info5').style.display = "flex";
+        }
+        function openInfo6(){
+            document.getElementById('info6').style.display = "flex";
+        }
+        function openInfo7(){
+            document.getElementById('info7').style.display = "flex";
+        } 
+        function closeInfo(){
+            document.getElementById('info1').style.display = "none";
+            document.getElementById('info2').style.display = "none";
+            document.getElementById('info3').style.display = "none";
+            document.getElementById('info4').style.display = "none";
+            document.getElementById('info5').style.display = "none";
+            document.getElementById('info6').style.display = "none";
+            document.getElementById('info7').style.display = "none";
+        }
+    </script>
+</body>
+</html>

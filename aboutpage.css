@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    background-image: url(bgphotos/idea.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    width: auto;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 110px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00FFF3;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.a-col h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+.a-col span{
+    color:#89fff9;
+}
+.a-col p{
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+    color: white;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.a-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
